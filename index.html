@@ -35,8 +35,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "nav-btn": "rgb(171, 239, 95)",
-              "main-bg": "rgba(244, 244, 244, 1);",
+              "nav-bg": "rgba(249, 247, 243, 1)",
+              "p": "rgba(17, 17, 17, 0.7)",
+              "btn-primary": "rgba(180, 244, 97, 1);",
             },
           },
         },
@@ -46,8 +47,39 @@
   <body class="font-lexend">
     <!-- header container -->
     <header>
-      <h3>hello</h3>
-      <h2>humlkyh</h2>
+      <div class="bg-nav-bg">
+        <nav class="max-w-screen-xl py-6 mx-auto px-5 lg:px-14">
+          <div class="grid  grid-cols-2 lg:grid-cols-3 grid-rows-2 lg:grid-rows-1 gap-9 lg:gap-0">
+            <!-- blog -->
+            <div class="hidden lg:block">
+              <button class="rounded-lg py-3 px-8 bg-btn-primary font-semibold text-xl">Blog</button>
+            </div>
+            <!-- logo -->
+            <div class="col-span-2 lg:col-span-1 flex justify-center">
+              <a class="text-xl font-bold p-0 flex items-center gap-2"
+              ><img src="./assets/logo.png" alt="" /><span class=""></span>
+              Donate Bangladesh</span
+              ></a
+              >
+            </div>
+            <!-- blog -->
+            <div class="flex justify-around lg:hidden">
+              <button class="rounded-lg py-3 px-8 bg-btn-primary font-semibold text-xl">Blog</button>
+            </div>
+            <!-- inventory -->
+            <div class="flex justify-around lg:justify-end">
+              <p class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="" /><span class="font-medium text-xl">5500 BDT</span>
+              </p>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- header toogle btn -->
+      <div class="flex justify-center gap-4 pb-8 pt-20">
+        <button class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl">Donation</button>
+        <button class="rounded-lg py-4 px-8 font-medium text-xl bg-transparent border border-gray-300 text-p">History</button>
+      </div>
     </header>
     <!-- main conatainer -->
     <main></main>
