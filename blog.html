@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/902fcacdb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- daisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <!-- colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "nav-bg": "#F9F7F3",
+              p: "rgba(17, 17, 17, 0.7)",
+              bor: "rgba(17, 17, 17, 0.1)",
+              collected: "rgba(17, 17, 17, 0.05)",
+              "black-t": "rgba(17, 17, 17, 1)",
+              "btn-primary": "rgba(180, 244, 97, 1);",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="">
+      <div class="bg-opacity-60 backdrop-blur-xl bg-nav-bg">
+        <nav class="max-w-screen-xl py-6 mx-auto px-5 lg:px-14">
+          <div
+            class="z-99 grid grid-cols-2 lg:grid-cols-3 grid-rows-2 lg:grid-rows-1 gap-9 lg:gap-0"
+          >
+            <!-- Home -->
+            <div class="hidden lg:block">
+              <button
+                id="homeBtn"
+                class="rounded-lg py-3 px-8 bg-btn-primary font-semibold text-xl"
+              >
+                Home
+              </button>
+            </div>
+            <!-- logo -->
+            <div class="col-span-2 lg:col-span-1 flex justify-center">
+              <a class="text-xl font-bold p-0 flex items-center gap-2"
+                ><img src="./assets/logo.png" alt="" /><span
+                  class="text-black-t"
+                  >Donate Bangladesh</span
+                ></a
+              >
+            </div>
+            <!-- blog -->
+            <div class="flex justify-around lg:hidden">
+              <button
+                class="rounded-lg py-3 px-8 bg-btn-primary font-semibold text-xl"
+              >
+                Home
+              </button>
+            </div>
+            <!-- inventory -->
+            <div class="flex justify-around lg:justify-end">
+              <p class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="" /><span
+                  class="font-medium text-xl"
+                  >5500 BDT</span
+                >
+              </p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero max-w-screen-xl mx-auto px-5 lg:px-14 pb-7 lg:pb-24">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="./assets/faq.png" class="w-full rounded-lg" />
+          <div class="space-y-5">
+            <div class="collapse collapse-arrow border border-blue-100">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                How can I donate to Palestine from Bangladesh online?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Sadaqa. BANK ACCOUNT. The City Bank PLC. Zakat. BANK ACCOUNT.
+                  Islami Bank PLC. Other options. Pay Online. Donate Here.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-blue-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How to donate for Palestine?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Be a lifeline for Palestine Refugees Gaza Emergency Appeal.
+                  Stand for humanity and help families in Gaza. Zakat. 100% of
+                  your zakat donation goes directly to Palestine Refugees and
+                  displaced families.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-blue-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                What is the definition of a donation?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  A donation is something which someone gives to a charity or
+                  other organization. Employees make regular donations to
+                  charity. [ + to/of/from] Charities appealed for donations of
+                  food and clothing for victims of the hurricane.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-blue-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                What is donation called?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  donation (noun as in gift) Strongest matches. aid allowance
+                  appropriation assistance bequest charity contribution
+                  endowment grant handout help relief subscription subsidy.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-blue-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Where is your office located?
+              </div>
+              <div class="collapse-content">
+                <p>Malborne,Australia,Sydney.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/pages.js"></script>
+  </body>
+</html>

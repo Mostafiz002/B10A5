@@ -35,7 +35,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "nav-bg": "rgba(249, 247, 243, 1)",
+              "nav-bg": "#F9F7F3",
               p: "rgba(17, 17, 17, 0.7)",
               bor: "rgba(17, 17, 17, 0.1)",
               collected: "rgba(17, 17, 17, 0.05)",
@@ -49,8 +49,8 @@
   </head>
   <body class="font-lexend">
     <!-- header container -->
-    <header class="sticky top-0">
-      <div class="bg-nav-bg">
+    <header class="sticky top-0 z-99 backdrop-blur-lg">
+      <div class="bg-opacity-60 backdrop-blur-xl bg-nav-bg">
         <nav class="max-w-screen-xl py-6 mx-auto px-5 lg:px-14">
           <div
             class="grid grid-cols-2 lg:grid-cols-3 grid-rows-2 lg:grid-rows-1 gap-9 lg:gap-0"
@@ -58,6 +58,7 @@
             <!-- blog -->
             <div class="hidden lg:block">
               <button
+                id="blogBtn"
                 class="rounded-lg py-3 px-8 bg-btn-primary font-semibold text-xl"
               >
                 Blog
@@ -75,6 +76,7 @@
             <!-- blog -->
             <div class="flex justify-around lg:hidden">
               <button
+                id="blogBtn"
                 class="rounded-lg py-3 px-8 bg-btn-primary font-semibold text-xl"
               >
                 Blog
@@ -146,7 +148,7 @@
             <button
               class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
             >
-              Donation
+              Donate Now
             </button>
           </div>
         </div>
@@ -188,7 +190,7 @@
             <button
               class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
             >
-              Donation
+              Donate Now
             </button>
           </div>
         </div>
@@ -231,12 +233,13 @@
             <button
               class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
             >
-              Donation
+              Donate Now
             </button>
           </div>
         </div>
       </section>
     </main>
     <footer class="h-24 bg-nav-bg"></footer>
+    <script src="./js/home.js"></script>
   </body>
 </html>
