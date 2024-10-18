@@ -84,11 +84,11 @@
             </div>
             <!-- inventory -->
             <div class="flex justify-around lg:justify-end">
-              <p class="flex items-center gap-2">
-                <img src="./assets/coin.png" alt="" /><span
-                  class="font-medium text-xl"
-                  >5500 BDT</span
+              <p class="flex items-center gap-2 font-medium text-xl">
+                <img src="./assets/coin.png" alt="" /><span id="inventory"
+                  >5500</span
                 >
+                BDT
               </p>
             </div>
           </div>
@@ -97,11 +97,13 @@
       <!-- header toogle btn -->
       <div class="flex justify-center gap-4 pb-8 pt-20">
         <button
+          id="donation-btn"
           class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
         >
           Donation
         </button>
         <button
+          id="history-btn"
           class="rounded-lg py-4 px-8 font-medium text-xl bg-transparent border border-gray-300 text-p"
         >
           History
@@ -110,8 +112,11 @@
     </header>
     <!-- main conatainer -->
     <main>
-      <!-- donation form -->
-      <section class="max-w-screen-xl mx-auto pb-8 lg:pb-20 px-5 lg:px-14">
+      <div
+        id="donation-section"
+        class="max-w-screen-xl mx-auto pb-8 lg:pb-20 px-5 lg:px-14"
+      >
+        <!-- donation form -->
         <!-- donation form - 1 -->
         <div
           class="p-8 border border-bor rounded-2xl grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0"
@@ -126,7 +131,7 @@
                 class="btn bg-collected hover:bg-collected border-none px-4 py-2 rounded-lg flex items-center gap-2 text-base"
               >
                 <img src="./assets/coin.png" alt="" />
-                <p>0 BDT</p>
+                <p><span id="n-total-fund">0</span> BDT</p>
               </button>
             </div>
             <h3 class="font-bold text-xl text-black-t">
@@ -141,11 +146,13 @@
               lives of those in need.
             </p>
             <input
+              id="n-addMoney"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
             />
             <button
+              id="n-fundBtn"
               class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
             >
               Donate Now
@@ -166,7 +173,7 @@
                 class="btn bg-collected hover:bg-collected px-4 py-2 border-none rounded-lg flex items-center gap-2 text-base"
               >
                 <img src="./assets/coin.png" alt="" />
-                <p>600 BDT</p>
+                <p><span id="f-total-fund">600</span> BDT</p>
               </button>
             </div>
             <h3 class="font-bold text-xl text-black-t">
@@ -183,11 +190,13 @@
               urgent need.
             </p>
             <input
+              id="f-addMoney"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
             />
             <button
+              id="f-fundBtn"
               class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
             >
               Donate Now
@@ -208,7 +217,7 @@
                 class="btn bg-collected hover:bg-collected border-none rounded-lg px-4 py-2 flex items-center gap-2 text-base"
               >
                 <img src="./assets/coin.png" alt="" />
-                <p>2400 BDT</p>
+                <p><span id="q-total-fund">2400</span> BDT</p>
               </button>
             </div>
             <h3 class="font-bold text-xl text-black-t">
@@ -226,20 +235,47 @@
               their time of need.
             </p>
             <input
+              id="q-addMoney"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
             />
             <button
+              id="q-fundBtn"
               class="rounded-lg py-4 px-8 bg-btn-primary font-semibold text-xl"
             >
               Donate Now
             </button>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- transaction start -->
+      <div
+        id="transaction-section"
+        class="hidden max-w-screen-xl mx-auto pb-8 lg:pb-20 px-5 lg:px-14"
+      >
+        <div id="transaction-container" class="space-y-3"></div>
+      </div>
+      <!-- transaction End -->
+      <!-- modal -->
+      <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box text-center">
+          <h3 class="text-3xl font-extrabold">Congrates!</h3>
+          <figure class="flex justify-center items-center my-4">
+            <img class="w-12 h-12" src="./assets/coin.png" alt="" />
+          </figure>
+          <p class="py-4 text-gray-600">You Have Donated for Humankind</p>
+          <h3 class="font-bold text-2xl">Succesfully</h3>
+          <div class="modal-action flex justify-center">
+            <!--close modal-->
+      <!-- <button id="close-btn" class="btn">Close Confirmation</button>
+          </div>
+        </div>
+      </dialog> -->
     </main>
     <footer class="h-24 bg-nav-bg"></footer>
+    <script src="./js/utities.js"></script>
+    <script src="./js/features.js"></script>
     <script src="./js/home.js"></script>
   </body>
 </html>
