@@ -38,7 +38,7 @@ function addTransactionHistory(amount, region) {
   // Set the content
   transactionEntry.innerHTML = `
     <p class="font-medium text-xl">${amount} Taka is Donated for ${region}</p>
-    <p class="font-medium rounded-lg p-2 mt-3 bg-gray-100 text-base">Date: ${dateString}</p>
+    <p class="font-normal rounded-lg p-2 mt-3 bg-gray-100 text-base">Date: ${dateString}</p>
   `;
 
   // Append the new transaction to the history container
@@ -71,7 +71,9 @@ document.getElementById("n-fundBtn").addEventListener("click", function () {
       inventory.innerText = inventoryNum - valueNum;
       // Add transaction to history
       addTransactionHistory(valueNum, "Flood at Noakhali, Bangladesh");
-
+      // modal
+      const myModal = document.getElementById("my_modal_1");
+      myModal.showModal();
       alert("Donation successful.");
     }
 
@@ -99,7 +101,9 @@ document.getElementById("f-fundBtn").addEventListener("click", function () {
       inventory.innerText = inventoryNum - valueNum;
       // Add transaction to history
       addTransactionHistory(valueNum, "Flood Relief in Feni,Bangladesh");
-
+      // modal
+      const myModal = document.getElementById("my_modal_1");
+      myModal.showModal();
       alert("Donation successful");
     }
     fInPut.value = "";
@@ -126,7 +130,9 @@ document.getElementById("q-fundBtn").addEventListener("click", function () {
       inventory.innerText = inventoryNum - valueNum;
       // Add transaction to history
       addTransactionHistory(valueNum, "Aid for Injured in the Quota Movement");
-
+      // modal
+      const myModal = document.getElementById("my_modal_1");
+      myModal.showModal();
       alert("Donation successful");
     }
     qInPut.value = "";

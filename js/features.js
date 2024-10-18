@@ -17,9 +17,9 @@ function activateButton(activeBtn, inactiveBtn) {
   activeBtn.style.border = "none";
 
   // Inactive button styles
-  inactiveBtn.style.backgroundColor = "#F3F3F3";
+  inactiveBtn.style.backgroundColor = "transparent";
   inactiveBtn.style.color = "#000";
-  inactiveBtn.style.border = "1px solid #F3F3F3";
+  inactiveBtn.style.border = "1px solid #DADEE2";
 }
 
 // Add event listeners for clicks
