@@ -6,45 +6,6 @@ const fTotal = document.getElementById("f-total-fund");
 const qTotal = document.getElementById("q-total-fund");
 const inventory = document.getElementById("inventory");
 
-// Function to add donation to history
-function addTransactionHistory(amount, region) {
-  const transactionContainer = document.getElementById("transaction-container");
-
-  // Create a new transaction entry
-  const transactionEntry = document.createElement("div");
-  transactionEntry.classList.add(
-    "p-4",
-    "mt-2",
-    "mb-5",
-    "border",
-    "border-gray-300",
-    "rounded-lg"
-  );
-
-  // Get the current date with time zone (GMT)
-  const now = new Date();
-  const dateString = now.toLocaleString("en-GB", {
-    timeZone: "GMT",
-    timeZoneName: "short",
-    hour12: false,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  });
-
-  // Set the content
-  transactionEntry.innerHTML = `
-    <p class="font-medium text-xl">${amount} Taka is Donated for ${region}</p>
-    <p class="font-normal rounded-lg p-2 mt-3 bg-gray-100 text-base">Date: ${dateString}</p>
-  `;
-
-  // Append the new transaction to the history container
-  transactionContainer.appendChild(transactionEntry);
-}
-
 // blog page
 const blogBtn = document.getElementById("blogBtn");
 blogBtn.addEventListener("click", function () {
@@ -74,7 +35,6 @@ document.getElementById("n-fundBtn").addEventListener("click", function () {
       // modal
       const myModal = document.getElementById("my_modal_1");
       myModal.showModal();
-      alert("Donation successful.");
     }
 
     nInPut.value = "";
@@ -104,7 +64,6 @@ document.getElementById("f-fundBtn").addEventListener("click", function () {
       // modal
       const myModal = document.getElementById("my_modal_1");
       myModal.showModal();
-      alert("Donation successful");
     }
     fInPut.value = "";
   }
@@ -133,7 +92,6 @@ document.getElementById("q-fundBtn").addEventListener("click", function () {
       // modal
       const myModal = document.getElementById("my_modal_1");
       myModal.showModal();
-      alert("Donation successful");
     }
     qInPut.value = "";
   }
