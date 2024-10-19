@@ -23,7 +23,6 @@ function addTransactionHistory(amount, region) {
     "rounded-lg"
   );
 
-  // Get the current date with time zone (GMT)
   const now = new Date();
   const dateString = now.toLocaleString("en-GB", {
     timeZoneName: "long",

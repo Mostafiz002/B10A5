@@ -22,6 +22,7 @@ document.getElementById("n-fundBtn").addEventListener("click", function () {
 
   if (isNaN(valueNum) || valueNum < 0) {
     alert("Please enter a valid number.");
+    nInPut.value = "";
     return;
   } else {
     nTotal.innerText = totalNum + valueNum;
@@ -51,6 +52,7 @@ document.getElementById("f-fundBtn").addEventListener("click", function () {
 
   if (isNaN(valueNum) || valueNum < 0) {
     alert("Please enter a valid number.");
+    fInPut.value = "";
     return;
   } else {
     fTotal.innerText = totalNum + valueNum;
@@ -79,6 +81,7 @@ document.getElementById("q-fundBtn").addEventListener("click", function () {
 
   if (isNaN(valueNum) || valueNum < 0) {
     alert("Please enter a valid number.");
+    qInPut.value = "";
     return;
   } else {
     qTotal.innerText = totalNum + valueNum;
